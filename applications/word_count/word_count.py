@@ -1,5 +1,13 @@
 def word_count(s):
-    # Your code here
+  s=s.lower()
+  words=s.split()
+  counts={}
+  for i in range(len(words)):
+    if words[i] in counts:
+      counts[words[i]]=counts[words[i]]+1
+    else:
+      counts[words[i]]=1
+  return counts
 
 
 
